@@ -1,6 +1,6 @@
 # Calculadora React + Vite
 
-![Calculadora React](./imgs/Calculadora-React.png)
+![Calculadora React](./src/imgs/Calculadora-React.png)
 
 ## Descrição
 
