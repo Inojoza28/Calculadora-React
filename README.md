@@ -41,3 +41,8 @@ Siga os passos abaixo para configurar e executar o projeto localmente:
 
    ```bash
    git clone https://github.com/seu-usuario/calculadora-react.git
+
+
+   ---
+
+> Desenvolvido com 🧡 por Gabriel Inojoza.
