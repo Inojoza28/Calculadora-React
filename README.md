@@ -22,7 +22,7 @@ Este projeto é uma **Calculadora Moderna e Minimalista** desenvolvida utilizand
 
 ## Capturas de Tela
 
-![Calculadora React](./screenshot.png)
+![Calculadora React](./src/imgs/Calculadora-React.png)
 
 *Figura 1: Interface da Calculadora React em um dispositivo móvel.*
 
