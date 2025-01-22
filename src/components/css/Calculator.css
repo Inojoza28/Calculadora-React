@@ -1,0 +1,84 @@
+/* src/components/Calculator.css */
+.calculator {
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 15px
+  }
+  
+  /* Ajuste a posição do botão "0" */
+  .button.large { /* Botão "0" */
+    grid-column: 1 / 3; /* Ocupa as duas primeiras colunas */
+    grid-row: 5 / 6;    /* Linha 5 */
+  }
+  
+  /* Ajustes para botões "0", ".", e "=" */
+  .button:nth-child(17) { /* Botão "0" */
+    grid-column: 1 / 3; /* Ocupa as duas primeiras colunas */
+    grid-row: 5 / 6;    /* Linha 5 */
+  }
+  
+  .button:nth-child(18) { /* Botão "." */
+    grid-column: 3 / 4; /* Coluna 3 */
+    grid-row: 5 / 6;    /* Linha 5 */
+  }
+  
+  .button:nth-child(19) { /* Botão "=" */
+    grid-column: 4 / 5; /* Coluna 4 */
+    grid-row: 5 / 6;    /* Linha 5 */
+  }
+  
+
+/* Media Query para telas com largura máxima de 400px */
+@media (max-width: 400px) {
+    .calculator {
+      width: 100%;              
+      padding: 15px;       
+      border-radius: 15px;   
+    }
+  
+    .display {
+      font-size: 2.5rem;     
+      padding: 15px;         
+      margin-top: 60px;   
+    }
+  
+    .buttons {
+      grid-gap: 8px;            /* Mantém o espaçamento reduzido entre os botões */
+      grid-template-columns: repeat(4, 1fr); /* Mantém 4 colunas */
+    }
+  
+    /* Remover estilos específicos que tornam o botão "0" maior */
+    .button.large { /* Botão "0" */
+      grid-column: span 1;      /* Ocupa apenas uma coluna */
+      grid-row: 5 / 6;          /* Fica na linha 5 */
+      height: 50px;        
+    }
+  
+    .button:nth-child(17) { /* Botão "0" */
+      grid-column: 1 / 2;       /* Ocupa apenas a primeira coluna */
+      grid-row: 5 / 6;          /* Fica na linha 5 */
+    }
+  
+    .button:nth-child(18) { /* Botão "." */
+      grid-column: 2 / 3;       /* Ocupa a segunda coluna */
+      grid-row: 5 / 6;          /* Fica na linha 5 */
+    }
+  
+    .button:nth-child(19) { /* Botão "=" */
+      grid-column: 3 / 5;       /* Ocupa as colunas 3 e 4 para manter alinhamento */
+      grid-row: 5 / 6;          /* Fica na linha 5 */
+      height: 50px;             /* Mantém a altura consistente */
+    }
+  }
+  
+  

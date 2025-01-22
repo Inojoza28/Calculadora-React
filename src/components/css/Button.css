@@ -1,0 +1,83 @@
+/* src/components/Button.css */
+
+/* Estilo geral dos botões */
+.button {
+    padding: 0;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%; /* Bordas totalmente arredondadas para botões regulares */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1; /* Proporção 1:1 para círculos */
+  }
+  
+  /* Estilos específicos dos botões */
+  .button.number {
+    background-color: var(--number-button);
+    border: 2px solid #555;
+    
+  }
+  
+  .button.secondary {
+    background-color: var(--secondary-button);
+    color: #333;
+  }
+  
+  .button.operator {
+    background-color: var(--operator-button);
+    font-size: 1.8rem;
+  }
+  
+  /* Estilo específico para o botão "0" */
+  .button.large {
+    grid-column: span 2;          /* Ocupa duas colunas */
+    border-radius: 50px;          
+    justify-content: flex-end;    /* Alinha o conteúdo à direita */
+    padding-right: 90px;          
+    padding-left: 10px;         
+    aspect-ratio: auto;           /* Remove a proporção fixa */
+    height: 60px;         
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+  
+  .button:active {
+    transform: scale(0.95); /* Efeito de clique */
+  }
+
+
+/* Media Query para telas com largura máxima de 400px */
+@media (max-width: 400px) {
+    .button {
+      font-size: 1.2rem;         
+      height: 50px;               
+      aspect-ratio: 1 / 1;  /* Mantém a proporção 1:1 para botões circulares */
+      border-radius: 50%;     
+      padding: 0;                 
+      justify-content: center;  
+      align-items: center;       
+    }
+  
+    .button.large {
+      font-size: 1.2rem; 
+      padding-right: 0;            
+      padding-left: 0;         
+      border-radius: 50%;  
+      aspect-ratio: 1 / 1;         /* Garante que o botão "0" seja circular */
+      height: 50px;           
+      grid-column: span 1;         /* Faz o botão "0" ocupar apenas uma coluna */
+      justify-content: center; 
+      align-items: center;    
+    }
+  
+    .button.operator {
+      font-size: 1.2rem;        
+    }
+  }
+  
